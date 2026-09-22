@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    public Connection getConnection(){
+    public static Connection getConnection(){
        Connection conn = null;
        try{
            Class.forName("com.mysql.cj.jdbc.Driver");
@@ -16,3 +16,4 @@ public class Conexao {
        return conn;
     }
 }
+
