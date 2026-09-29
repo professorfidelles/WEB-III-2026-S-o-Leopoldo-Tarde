@@ -71,7 +71,7 @@ public class AlunoDao {
     }
 
     public void deletar(int valor){
-        String sql = "DELETE FROM aluno WHERE id="+valor;
+        String sql = "DELETE FROM alunos WHERE id="+valor;
 
         try {
             Connection conn = Conexao.getConnection();
